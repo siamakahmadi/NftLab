@@ -1,0 +1,74 @@
+.container {
+  padding: 0 5rem;
+}
+@media (max-width: 640px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+.main {
+  min-height: 100vh;
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.heroSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (max-width: 640px) {
+    flex-direction:column-reverse;
+  }
+  .leftSection {
+    width: 584px;
+    margin-top: -201px;
+    @media (max-width: 640px) {
+      width: 500px;
+    }
+    .title {
+      font-family: "Sk-Modernist";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 68px;
+      line-height: 93px;
+      @media (max-width: 640px) {
+        font-size: 38px;
+        line-height: 55px;
+      }
+      span {
+        background: linear-gradient(100deg, #ec26fd 50.95%, #0098ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+    .info {
+      font-family: "Sk-Modernist";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      margin-top: 19px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  .heroImage {
+    width: 703px;
+    height: 1099px;
+    background-image: url("../pages/Assets/Images/Heroimg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (max-width: 640px) {
+      width: 315px;
+      height: 421px;
+    }
+  }
+}
