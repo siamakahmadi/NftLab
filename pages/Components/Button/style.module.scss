@@ -1,0 +1,34 @@
+.btn {
+    padding: 13px;
+    font-family: "Sk-Modernist";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    border-radius: 2px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+
+    border-image-source: linear-gradient(to left, #EC26FD, #0098FF) ;
+
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient(90deg, #EC26FD 26.73%, #0098FF 100%);
+        border-width: 0px;
+    }
+}
+.simpleBtn{
+    font-family: "Sk-Modernist";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(90deg, #EC26FD 26.73%, #0098FF 100%);
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+    cursor: pointer;
+
+}
