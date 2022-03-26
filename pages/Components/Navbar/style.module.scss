@@ -1,0 +1,105 @@
+.navbar {
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 140px;
+        align-items: center;
+        .navLogo {
+            font-family: "Sk-Modernist";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            background: linear-gradient(90deg, #ec26fd 26.73%, #0098ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .navList {
+            display: flex;
+            gap: 44px;
+            align-items: center;
+            .navItem {
+                font-family: "Sk-Modernist";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                cursor: pointer;
+                z-index: 1;
+                color: rgba(255, 255, 255, 0.7);
+                transition: all 0.2s;
+                &::before {
+                    content: "";
+                    visibility: hidden;
+                }
+                &:hover {
+                    color: #fff;
+                    &::before {
+                        content: "";
+                        transition: all 0.2s;
+                        width: 60px;
+                        visibility: visible;
+                        display: block;
+                        rotate: -15deg;
+                        height: 24px;
+                        position: absolute;
+                        z-index: -1;
+                        background: linear-gradient(
+                            55.92deg,
+                            rgba(236, 38, 253, 0.6) 31.79%,
+                            rgba(0, 152, 255, 0.6) 98.33%
+                        );
+                    }
+                }
+            }
+            .navItemActive {
+                font-family: "Sk-Modernist";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 22px;
+                color: #fff;
+                z-index: 1;
+                &::before {
+                    content: "";
+                    width: 60px;
+                    display: block;
+                    rotate: -15deg;
+                    height: 24px;
+                    position: absolute;
+                    z-index: -1;
+                    background: linear-gradient(
+                        55.92deg,
+                        rgba(236, 38, 253, 0.6) 31.79%,
+                        rgba(0, 152, 255, 0.6) 98.33%
+                    );
+                }
+            }
+
+            @media (max-width: 640px) {
+                display: none;
+            }
+        }
+    }
+    .login {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        a {
+            font-family: "Sk-Modernist";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+}

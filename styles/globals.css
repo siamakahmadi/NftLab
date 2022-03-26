@@ -2,12 +2,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Sk Modernist
+    Helvetica Neue, sans-serif;
+  background-color: #121128;
+  color: #fff;
 }
 
 a {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
 }
 
