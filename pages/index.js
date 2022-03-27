@@ -30,7 +30,9 @@ export default function Home() {
             </div>
         </div>
 
-        <Card />
+        <div className={styles.cardSection}>
+          <Card />
+        </div>
 
       </main>
 

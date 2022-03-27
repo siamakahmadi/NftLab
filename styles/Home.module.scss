@@ -8,7 +8,7 @@
 }
 .main {
   min-height: 100vh;
-  padding: 5rem 0;
+  // padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -64,10 +64,11 @@
   }
   .heroImage {
     width: 703px;
-    height: 1099px;
+    height: 865px;
     background-image: url("../pages/Assets/Images/Heroimg.png");
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 1;
     @media (max-width: 640px) {
       width: 400px;
       height: 400px;
@@ -89,5 +90,12 @@
       width: 400px;
       height: 400px;
     }
+  }
+}
+
+.cardSection{
+  margin-top: -208px;
+  @media (max-width: 640px) {
+    margin-top: 0px;
   }
 }
