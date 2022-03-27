@@ -26,6 +26,9 @@
             display: flex;
             gap: 44px;
             align-items: center;
+            @media (max-width: 640px) {
+                display:none;
+              }
             .navItem {
                 font-family: "Sk-Modernist";
                 font-style: normal;
@@ -114,9 +117,4 @@
         filter: blur(95px);
         transform: matrix(0.51, 0.88, -0.83, 0.53, 0, 0);
     }
-}
-@media (max-width: 640px) {
-   .navList{
-       display: none;
-   }
 }

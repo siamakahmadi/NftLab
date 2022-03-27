@@ -9,26 +9,44 @@
     border-radius: 2px;
     border: 2px solid;
     border-image-slice: 1;
-    border-width: 2px;
-
-    border-image-source: linear-gradient(to left, #EC26FD, #0098FF) ;
-
+    border-width: 3px;
+    transition: all 0.3s;
+    border-image-source: linear-gradient(to left, #ec26fd, #0098ff);
     cursor: pointer;
-    &:hover{
-        background: linear-gradient(90deg, #EC26FD 26.73%, #0098FF 100%);
-        border-width: 0px;
+    &:hover {
+        border-image-source: linear-gradient(to right, #ec26fd, #0098ff);
+        animation-name: border;
+        filter: drop-shadow(0px 0px 24px #0098FF);
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-fill-mode: both;
+        
+    }
+    @keyframes border {
+        0% {
+            border-image-source: linear-gradient(to left, #ec26fd, #0098ff);
+        }
+        25% {
+            border-image-source: linear-gradient(to top,  #ec26fd, #0098ff);
+        }
+        50% {
+            border-image-source: linear-gradient(to right,  #ec26fd, #0098ff );
+        }
+        100% {
+            border-image-source: linear-gradient(to bottom,  #ec26fd, #0098ff);
+        }
     }
 }
-.simpleBtn{
+.simpleBtn {
     font-family: "Sk-Modernist";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
-    background: linear-gradient(90deg, #EC26FD 26.73%, #0098FF 100%);
+    background: linear-gradient(90deg, #ec26fd 26.73%, #0098ff 100%);
     -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     cursor: pointer;
-
 }

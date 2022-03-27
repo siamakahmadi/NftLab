@@ -1,5 +1,5 @@
 import Styles from './style.module.scss'
-import Style from './style.module.css'
+
 export default function Navbar() {
     return (
         <div className={Styles.navbar}>
@@ -14,7 +14,7 @@ export default function Navbar() {
                 </div>
             </div>
             <div className={Styles.login}>
-                <a className={Style.title}>Login</a>
+                <a>Login</a>
                 <a>Signin</a>
             </div>
         </div>

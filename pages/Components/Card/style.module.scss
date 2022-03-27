@@ -1,8 +1,14 @@
-.title{
-    background-color: black;
-}
-@media (max-width: 640px) {
-    .title{
-        background-color: red;
+.container{
+    .navigation{
+
     }
-  }
+    .cardList{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 25px;
+        @media (max-width: 640px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+}
+
