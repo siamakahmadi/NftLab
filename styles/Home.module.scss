@@ -1,7 +1,7 @@
 .container {
   padding: 0 5rem;
 }
-@media (max-width: 640px) {
+@media (max-width: 600px) {
   .container {
     padding: 0 1rem;
   }
@@ -27,7 +27,7 @@
   .leftSection {
     width: 584px;
     @media (max-width: 640px) {
-      width: 400px;
+      width: auto;
     }
     .title {
       font-family: "Sk-Modernist";
@@ -80,7 +80,7 @@
   .heroSection {
     flex-direction: column-reverse;
     .leftSection {
-      width: 400px;
+      width: auto;
       .title {
         font-size: 38px;
         line-height: 55px;
@@ -96,6 +96,6 @@
 .cardSection{
   margin-top: -208px;
   @media (max-width: 640px) {
-    margin-top: 0px;
+    margin-top: 50px;
   }
 }

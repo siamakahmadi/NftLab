@@ -105,11 +105,14 @@
     }
 
     &::after {
-        content: 'sss';
+        content: '';
         width: 224.01px;
         height: 221.2px;
         position: absolute;
         right: -40px;
+        @media (max-width: 640px) {
+            right: 50px;
+          }
         top: -100px;
         z-index: -1;
         background: linear-gradient(180deg, #0098FF 0%, #7C5CFE 52.6%, #EC26FD 100%);

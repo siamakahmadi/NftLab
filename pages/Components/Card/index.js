@@ -42,7 +42,7 @@ export default function index() {
                 </div>2.50 ETH</p>
             </div>
             <div className={style.cardPrice}>
-            <Button title="Place A Baid" isCard={true} />
+              <Button title="Place A Baid" isCard={true} />
             </div>
           </div>
         </div>
@@ -50,6 +50,7 @@ export default function index() {
         <div className={style.card}>3</div>
         <div className={style.card}>4</div>
         <div className={style.card}>5</div>
+        <div className={style.card}>6</div>
       </div>
     </div>
   )

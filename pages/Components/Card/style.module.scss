@@ -1,6 +1,7 @@
 .container {
-    width: 100%;
+    // width: 100%;
     position: relative;
+    margin-bottom: 30px;
     &::after{
         content: '';
         width: 48%;
@@ -8,7 +9,12 @@
         background: linear-gradient(270deg, #121128 0%, #121128 47.4%, rgba(18, 17, 40, 0) 100%);        display: block;
         position: absolute;
         right: 0px;
+        display: block;
         top: 0px;
+        @media (max-width: 640px) {
+            display: none;
+        }
+        
     }
 
     .navigation {
@@ -21,12 +27,13 @@
     .cardList {
         margin-top: 28px;
         display: grid;
-        overflow-y: scroll;
-
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 280px;
+        overflow: hidden;
+        justify-content: start;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 40px;
         @media (max-width: 640px) {
-            grid-template-columns: repeat(5, minmax(0, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 130px;
         }
         .card {
             width: 227px;

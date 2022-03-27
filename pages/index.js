@@ -23,7 +23,7 @@ export default function Home() {
               <div className={styles.info}>We believe you have a unique taste, discover the endless possibilities of the NFT world</div>
               <div className={styles.buttonContainer}>
               <Button title="Explore Now" actuveBorder={true}/>
-              <Button title="Explore Now" actuveBorder={false}/>
+              <Button title="Craeet My NFT" actuveBorder={false}/>
               </div>
             </div>
             <div className={styles.heroImage}>
