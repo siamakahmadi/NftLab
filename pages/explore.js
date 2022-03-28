@@ -1,6 +1,8 @@
 import style from '../styles/Explore.module.scss'
 import Navbar from "./Components/Navbar/Navbar"
 import Head from 'next/head'
+import Card from './Components/Card/index'
+
 export default function Store() {
   return (
     <div className={style.container}>
@@ -42,7 +44,7 @@ export default function Store() {
             </div>
           </div>
           </div>
-          
+
           <div className={style.card}>
             <div className={style.coverImg}>
               <img src='https://images.unsplash.com/photo-1646237023864-8f1daf930976?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80'/>
@@ -212,8 +214,50 @@ export default function Store() {
           </div>
 
         </div>
+        <div className={style.heroTitle}>
+          <p>Find the hottest NFTs from the best Creators</p>
+        </div>
       </div>
       
+      <div className='trendingCard'>
+          <Card/>
+      </div>
+      <div className='trendingCard'>
+          <Card/>
+      </div>
+
+      <div className={style.hotSell}>
+          <div className={style.hotSellContainer}>
+              <div className={style.cover}><img src='https://images.unsplash.com/photo-1646237023864-8f1daf930976?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80'/></div>
+              <div className={style.information}>
+                <div className={style.title}>
+                  Digitizazion
+                </div>
+                <div className={style.detail}>
+
+                  <div className={style.createdBy}>
+                    <p className={style.title}>Created By</p>
+                    <div className={style.creatorInfo}>
+                      <div className={style.img}><img src='https://images.unsplash.com/photo-1646237023864-8f1daf930976?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80'/></div>
+                      <div className={style.name}>@nocelcoverage</div>
+                    </div>
+                  </div>
+
+                  <div className={style.createdBy}>
+                    <p className={style.title}>Collection</p>
+                    <div className={style.creatorInfo}>
+                      <div className={style.img}><img src='https://images.unsplash.com/photo-1646237023864-8f1daf930976?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80'/></div>
+                      <div className={style.name}>Digitizazion</div>
+                    </div>
+                  </div>
+                  
+                </div>
+              <div>
+                  
+                </div>
+              </div>
+          </div>
+      </div>
 
     </main>
 

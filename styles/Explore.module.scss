@@ -19,7 +19,6 @@
 }
 .heroSection {
   margin-top: 120px;
-  // position: relative;
   .cardSkew {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -65,7 +64,7 @@
       height: 250px;
       background-color: #030303;
       cursor: pointer;
-      &:hover{
+      &:hover {
         scale: 1.1;
         box-shadow: 31px 54px 100px -9px #000000;
         transition: all 0.3s;
@@ -116,6 +115,89 @@
             }
           }
         }
+      }
+    }
+  }
+  .heroTitle {
+    width: 623px;
+    // position: ;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    p {
+      font-family: "Sk-Modernist";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 58px;
+      line-height: 93px;
+      color: #ffffff;
+    }
+  }
+}
+
+.hotSell {
+  width: 100%;
+  padding: 0px 100px;
+  margin-bottom: 100px;
+  margin-top: 122px;
+  .hotSellContainer {
+    display: flex;
+    .cover {
+      width: 572px;
+      height: 545px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .information {
+      margin-left: 40px;
+
+      .title {
+        font-family: "Sk-Modernist";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 93px;
+        color: #ffffff;
+      }
+      .detail {
+        display: flex;
+        gap: 80px;
+        .createdBy {
+          .title {
+            font-family: "Sk-Modernist";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 93px;
+            color: #a9a9a9;
+          }
+          .creatorInfo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .img {
+              width: 45px;
+              height: 45px;
+              img {
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .name {
+              font-family: "Sk-Modernist";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 93px;
+            }
+          }
+        }
+
       }
     }
   }
