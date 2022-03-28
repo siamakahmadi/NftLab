@@ -15,15 +15,15 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <Navbar/>
+        <Navbar logo="NftLab" />
 
         <div className={styles.heroSection}>
             <div className={styles.leftSection}>
               <div className={styles.title}>Extraordinary <span>NFT</span> youll love</div>
               <div className={styles.info}>We believe you have a unique taste, discover the endless possibilities of the NFT world</div>
               <div className={styles.buttonContainer}>
-              <Button title="Explore Now" actuveBorder={true}/>
-              <Button title="Craeet My NFT" actuveBorder={false}/>
+              <Button title="Explore Now" actuveBorder={true} slug="store"/>
+              <Button title="Craeet My NFT" actuveBorder={false} slug="/" />
               </div>
             </div>
             <div className={styles.heroImage}>

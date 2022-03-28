@@ -1,16 +1,26 @@
 import Styles from './style.module.scss'
-
-export default function Navbar() {
+import Link from 'next/link'
+export default function Navbar(props) {
     return (
         <div className={Styles.navbar}>
             <div className={Styles.navContainer}>
-                <div className={Styles.navLogo}>NftLab</div>
+                <div className={Styles.navLogo}>{props.logo}</div>
                 <div className={Styles.navList}>
-                    <a className={Styles.navItemActive}>Home</a>
-                    <a className={Styles.navItem}>Market</a>
-                    <a className={Styles.navItem}>Feature</a>
-                    <a className={Styles.navItem}>Explore</a>
-                    <a className={Styles.navItem}>Create</a>
+                    <Link href={'/'}>
+                        <p className={Styles.navItemActive}>Home</p>
+                    </Link>
+                    <Link href={'/'}>
+                        <p className={Styles.navItem}>Market</p>
+                    </Link>
+                    <Link href={'/'}>
+                        <p className={Styles.navItem}>Feature</p>
+                    </Link>
+                    <Link href={'explore'}>
+                        <p className={Styles.navItem}>Explore</p>
+                    </Link>
+                    <Link href={'/'}>
+                        <p className={Styles.navItem}>Create</p>
+                    </Link>
                 </div>
             </div>
             <div className={Styles.login}>

@@ -1,0 +1,122 @@
+.container {
+  padding: 0 5rem;
+  overflow-x: hidden;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+.main {
+  min-height: 100vh;
+  // padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.heroSection {
+  margin-top: 120px;
+  // position: relative;
+  .cardSkew {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    transform: matrix(0.8, 0.25, -0.92, 0.92, 0, 0);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    gap: 30px;
+    &::after {
+      content: "";
+      background: linear-gradient(
+        95.27deg,
+        #121128 -3.45%,
+        rgba(18, 17, 40, 0.97) 66.17%,
+        rgba(18, 17, 40, 0.89) 82.1%,
+        rgba(18, 17, 40, 0) 95.41%
+      );
+      transform: rotate(0deg);
+      position: absolute;
+      width: 394.68px;
+      height: 541.66px;
+      display: block;
+    }
+    &::before {
+      content: "";
+      background: linear-gradient(
+        95.27deg,
+        #121128 -3.45%,
+        rgba(18, 17, 40, 0.97) 66.17%,
+        rgba(18, 17, 40, 0.89) 82.1%,
+        rgba(18, 17, 40, 0) 95.41%
+      );
+      transform: rotate(-82.25deg);
+      width: 367.67px;
+      height: 610px;
+      display: block;
+      position: absolute;
+      top: 246px;
+      right: 292px;
+    }
+    .card {
+      width: 200px;
+      height: 250px;
+      background-color: #030303;
+      cursor: pointer;
+      &:hover{
+        scale: 1.1;
+        box-shadow: 31px 54px 100px -9px #000000;
+        transition: all 0.3s;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+      }
+      .cardInfo {
+        padding: 0px 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: last baseline;
+        .info {
+          align-items: center;
+          .cardTitle {
+            font-family: "Sk-Modernist";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 14px;
+            color: #ffffff;
+          }
+          .cardPrice {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-family: "Sk-Modernist";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 12px;
+            color: #ffffff;
+          }
+          .cardBtn {
+            .btn {
+              font-family: "Sk-Modernist";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 14px;
+              display: flex;
+              align-items: center;
+
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

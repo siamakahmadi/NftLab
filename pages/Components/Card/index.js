@@ -8,9 +8,10 @@ export default function index() {
     <div className={style.container}>
       <div className={style.navigation}>
         <div>
+          left
         </div>
         <div>
-
+          right
         </div>
       </div>
       <div className={style.cardList}>
@@ -37,7 +38,7 @@ export default function index() {
                 </div>2.50 ETH</p>
             </div>
             <div className={style.cardPrice}>
-              <Button title="Place A Baid" isCard={true} />
+              <Button title="Place A Baid" isCard={true} slug="/"/>
             </div>
           </div>
         </div>
