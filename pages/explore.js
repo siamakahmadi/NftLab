@@ -252,8 +252,20 @@ export default function Store() {
                   </div>
                   
                 </div>
-              <div>
-                  
+                <div>
+                  <div className={style.reservePrice}>
+                    <p>Reserve Price</p>
+                    <div>
+                      <div className={style.icon}>icon</div>
+                      <div className={style.price}>
+                        <div className={style.ethr}>price theter</div>
+                        <div className={style.dollar}>price dollar</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={style.auotionEnds}>
+                    counter
+                  </div>
                 </div>
               </div>
           </div>

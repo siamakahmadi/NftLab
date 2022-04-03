@@ -161,6 +161,9 @@
         font-size: 48px;
         line-height: 93px;
         color: #ffffff;
+        margin-bottom: 0px;
+        position: relative;
+    
       }
       .detail {
         display: flex;
@@ -173,6 +176,15 @@
             font-size: 22px;
             line-height: 93px;
             color: #a9a9a9;
+            &::after{
+              content: '';
+              width: 115px;
+              height: 2px;
+              left: 0px;
+              position: absolute;
+              top: 80px;
+              background: linear-gradient(90deg, #121128 0%, #FFFFFF 47.92%, #121128 100%);
+            }
           }
           .creatorInfo {
             display: flex;
